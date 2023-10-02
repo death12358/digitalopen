@@ -1,0 +1,12 @@
+.vscode
+.env
+
+.DS_Store
+
+.VERSION
+
+# local environment shell script
+env.bat
+env.sh
+env.*.bat
+env.*.sh
