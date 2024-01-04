@@ -1,0 +1,16 @@
+# 引用以配置好流水線的方式
+# 該檔案.gitlab-ci.yml 與 deployment.yaml 是為一組的
+include:
+  - project: 'gaas1/devops/ylc-dockerfile-method'
+    ref: main
+    file: 'templates/dockerfile-pipeline.yml' #引用templates，使用java-pipeline.yml
+
+# 該專案所使用到的環境變數
+variables:
+  NAMESPACE_CATEGORY: game # 該項目在 Kubernetes 內的 Namespace 的分類
+  # 深圳 DEV 環境所需的變數
+  DEV_DOCKER_HUB: 10.10.10.227
+  DEV_SERVER: 10.10.10.238
+  UPDATE_PATH: /ylc/scripts/docker/ylcgame/
+  DEPLOY: $CI_PROJECT_NAME # gameclinet
+  RUNNERS: sz-ylc-dev

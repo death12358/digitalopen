@@ -1,0 +1,7 @@
+address: ":80"
+serverName: SlotMathServer
+useCompress: true
+
+Math_Redis_Host: "127.0.0.1:6379"
+# Math_Redis_Port: 6379
+Math_Redis_Password: ""
