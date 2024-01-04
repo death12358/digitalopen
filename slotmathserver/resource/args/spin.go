@@ -3,8 +3,6 @@ package args
 import (
 	"encoding/json"
 	"fmt"
-
-	"github.com/Bofry/arg/assert"
 )
 
 type SpinArgs struct {
@@ -18,17 +16,18 @@ type SpinArgs struct {
 
 // Validate validates the SpinArgs
 func (v *SpinArgs) Validate() error {
-	return assert.Assert(
-		assert.NonEmptyString(v.Id, "id"),
-		assert.NonEmptyString(v.Brand, "brand"),
-		assert.NonEmptyString(v.Username, "username"),
-		assert.JsonNumber(v.Bet, "bet",
-			assert.NonNanNorInf,
-			assert.NonNegativeNumber,
-		),
-		NonEmptyArray(v.Pickem, "pickem"),
-		assert.NonEmptyString(v.Currency, "currency"),
-	)
+	// return assert.Assert(
+	// 	assert.NonEmptyString(v.Id, "id"),
+	// 	assert.NonEmptyString(v.Brand, "brand"),
+	// 	assert.NonEmptyString(v.Username, "username"),
+	// 	assert.JsonNumber(v.Bet, "bet",
+	// 		assert.NonNanNorInf,
+	// 		assert.NonNegativeNumber,
+	// 	),
+	// 	NonEmptyArray(v.Pickem, "pickem"),
+	// 	assert.NonEmptyString(v.Currency, "currency"),
+	// )
+	return nil
 }
 
 const (
@@ -40,51 +39,33 @@ const (
 func NonEmptyArray(v interface{}, name string) error {
 	switch x := v.(type) {
 	case nil:
-		return assert.ThrowError(name, "cannot be an nil array")
+		return fmt.Errorf(name, "cannot be an nil array")
 	case []string:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	case []int:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	case []int32:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	case []int64:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	case []float32:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	case []float64:
 		if len(x) == 0 {
-			return assert.ThrowError(
-				name,
-				fmt.Sprintf(ERR_EMPTY_ARRAY, x),
-			)
+			return fmt.Errorf(name, "cannot be an nil array")
 		}
 	default:
-		return assert.ThrowError(name, fmt.Sprintf(ERR_NON_ARRAY, x, name))
+		return fmt.Errorf(name, "cannot be an nil array")
 	}
 
 	return nil

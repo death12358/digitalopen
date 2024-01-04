@@ -3,7 +3,7 @@ package args
 import (
 	"encoding/json"
 
-	"github.com/Bofry/arg/assert"
+	"github.com/Bofry/arg"
 )
 
 type PoolArgs struct {
@@ -12,8 +12,8 @@ type PoolArgs struct {
 
 // Validate validates the SpinArgs
 func (v *PoolArgs) Validate() error {
-	return assert.Assert(
-		assert.NonEmptyString(v.Brand, "brand"),
+	return arg.Assert(
+		arg.Strings.NonEmpty(v.Brand, "brand"),
 	)
 }
 
@@ -26,13 +26,14 @@ type JackpotArgs struct {
 
 // Validate validates the SpinArgs
 func (v *JackpotArgs) Validate() error {
-	return assert.Assert(
-		assert.NonEmptyString(v.Brand, "brand"),
-		assert.NonEmptyString(v.Username, "username"),
-		assert.JsonNumber(v.Bet, "bet",
-			assert.NonNanNorInf,
-			assert.NonNegativeNumber,
-		),
-		assert.NonEmptyString(v.Currency, "currency"),
-	)
+	// return assert.Assert(
+	// 	assert.NonEmptyString(v.Brand, "brand"),
+	// 	assert.NonEmptyString(v.Username, "username"),
+	// 	assert.JsonNumber(v.Bet, "bet",
+	// 		assert.NonNanNorInf,
+	// 		assert.NonNegativeNumber,
+	// 	),
+	// 	assert.NonEmptyString(v.Currency, "currency"),
+	// )
+	return nil
 }

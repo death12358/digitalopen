@@ -1,6 +1,6 @@
 package slots
 
-import "github.com/death12358/digitalopn/games"
+import "digitalopen/games"
 
 // ReelStripsDef - 轉輪表定義，用於盤面個數
 type ReelStripsDef []int

@@ -1,11 +1,11 @@
 package sg001
 
 import (
-	"strconv"
+	"digitalopen/games"
+	"digitalopen/games/random"
+	"digitalopen/games/slots"
 
-	"github.com/death12358/digitalopn/games"
-	"github.com/death12358/digitalopn/games/random"
-	"github.com/death12358/digitalopn/games/slots"
+	"strconv"
 
 	"github.com/shopspring/decimal"
 )

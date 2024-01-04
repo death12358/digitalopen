@@ -1,7 +1,7 @@
 package sg001
 
 import (
-	"github.com/death12358/digitalopn/games"
+	"digitalopen/games"
 
 	"github.com/shopspring/decimal"
 )

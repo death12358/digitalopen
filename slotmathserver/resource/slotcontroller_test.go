@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"gitlab.com/gaas_math/slotmachine/sg001"
-	"gitlab.com/gaas_module/games"
+	"digitalopen/games"
+	"digitalopen/sg001"
 )
 
 func TestNew(t *testing.T) {

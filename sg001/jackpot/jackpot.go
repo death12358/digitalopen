@@ -1,10 +1,10 @@
 package jackpot
 
 import (
-	"github.com/death12358/digitalopn/games"
-	"github.com/death12358/digitalopn/games/random"
-	"github.com/death12358/digitalopn/games/slots"
-	weights "github.com/death12358/digitalopn/games/weight"
+	"digitalopen/games"
+	"digitalopen/games/random"
+	"digitalopen/games/slots"
+	weights "digitalopen/games/weight"
 
 	"github.com/shopspring/decimal"
 )

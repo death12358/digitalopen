@@ -1,11 +1,10 @@
 package lightning
 
 import (
-	"github.com/death12358/digitalopn/games"
+	"digitalopen/games"
+	weights "digitalopen/games/weight"
 
 	"github.com/shopspring/decimal"
-
-	weights "github.com/death12358/digitalopn/games/weight"
 )
 
 const (

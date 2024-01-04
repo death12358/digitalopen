@@ -1,12 +1,10 @@
 package games_test
 
 import (
+	"digitalopen/games"
+	"digitalopen/games/slots"
 	"log"
 	"testing"
-
-	"github.com/death12358/digitalopn/games/slots"
-
-	"github.com/death12358/digitalopn/games"
 
 	"github.com/shopspring/decimal"
 )

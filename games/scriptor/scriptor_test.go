@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/death12358/digitalopn/games/scriptor"
+	"digitalopen/games/scriptor"
 )
 
 var (

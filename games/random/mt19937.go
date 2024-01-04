@@ -29,8 +29,9 @@ func init() {
 }
 
 // Uint63n - 產生 0 ~ n-1 的隨機數
-//  @param n		隨機數範圍
-//  @return uint64	隨機數
+//
+//	@param n		隨機數範圍
+//	@return uint64	隨機數
 func Uint63n(n uint64) uint64 {
 	randlk.Lock()
 	num := rng_mt19937.Uint64n(n)
@@ -39,7 +40,8 @@ func Uint63n(n uint64) uint64 {
 }
 
 // Uint63sn - 產生 0 ~ n-1 的隨機數
-//  @param ns		隨機數範圍
+//
+//	@param ns		隨機數範圍
 func Uint63sn(n []uint64) []uint64 {
 	if n == nil {
 		return nil
@@ -56,8 +58,9 @@ func Uint63sn(n []uint64) []uint64 {
 }
 
 // Int63n - 產生 0 ~ n-1 的隨機數
-//  @param n		隨機數範圍
-//  @return int64	隨機數
+//
+//	@param n		隨機數範圍
+//	@return int64	隨機數
 func Int63n(n int64) int64 {
 	randlk.Lock()
 	num := rng_mt19937.Int63n(n)
@@ -66,7 +69,8 @@ func Int63n(n int64) int64 {
 }
 
 // Int63sn
-//  @param ns		隨機數範圍
+//
+//	@param ns		隨機數範圍
 func Int63sn(n []int64) []int64 {
 	if n == nil {
 		return nil
@@ -107,8 +111,8 @@ func Intsn(n []int) []int {
 	return nums
 }
 
-//  Float64w - 權重隨機
-//  @param w		權重 0 ~ 1
+// Float64w - 權重隨機
+// @param w		權重 0 ~ 1
 func Float64w(w []float64) int {
 	randlk.Lock()
 	num := rng_mt19937.Float64w(w)
@@ -117,7 +121,8 @@ func Float64w(w []float64) int {
 }
 
 // Int64w - 權重隨機
-//  @param w		權重 0 ~ 1
+//
+//	@param w		權重 0 ~ 1
 func Int64w(w []int64) int {
 	randlk.Lock()
 	num := rng_mt19937.Int64w(w)

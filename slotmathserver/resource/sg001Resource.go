@@ -1,16 +1,16 @@
 package resource
 
 import (
+	"digitalopen/games"
+	"digitalopen/sg001"
+	"digitalopen/slotmathserver/resource/args"
 	"encoding/json"
 	"errors"
-	"slotmathserver/resource/args"
 
 	"github.com/Bofry/host-fasthttp/response"
 	"github.com/Bofry/httparg"
 	"github.com/shopspring/decimal"
 	"github.com/valyala/fasthttp"
-	"gitlab.com/gaas_math/slotmachine/sg001"
-	"gitlab.com/gaas_module/games"
 )
 
 func init() {

@@ -1,6 +1,6 @@
 package sg001
 
-import "github.com/death12358/digitalopn/games"
+import "digitalopen/games"
 
 var (
 	ngReelStrips98_8 = games.ReelStrips{

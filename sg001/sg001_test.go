@@ -1,16 +1,14 @@
 package sg001_test
 
 import (
+	"digitalopen/games"
+	"digitalopen/games/random"
+	weights "digitalopen/games/weight"
+	"digitalopen/sg001"
 	"encoding/json"
 	"fmt"
 	"testing"
 
-	"games/random"
-	weights "games/weight"
-
-	"games"
-
-	"github.com/death12358/digitalopn/sg001"
 	"github.com/shopspring/decimal"
 )
 

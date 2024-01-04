@@ -3,7 +3,7 @@ package scriptor
 import (
 	"encoding/json"
 
-	"github.com/death12358/digitalopn/games"
+	"digitalopen/games"
 )
 
 // RoundRecords

@@ -1,11 +1,11 @@
 package main
 
 import (
+	"digitalopen/slotmathserver/failure"
+	. "digitalopen/slotmathserver/internal"
+	. "digitalopen/slotmathserver/resource"
 	"encoding/json"
 	"log"
-	"slotmathserver/failure"
-	. "slotmathserver/internal"
-	. "slotmathserver/resource"
 
 	"github.com/Bofry/config"
 	fasthttp "github.com/Bofry/host-fasthttp"
@@ -19,18 +19,6 @@ type ResourceManager struct {
 	*DefaultResource     `url:"/"`
 	*HeathycheckResource `url:"/heathycheck"`
 	*SG001Resource       `url:"/sg001"`
-	*SG002Resource       `url:"/sg002"`
-	*SG003Resource       `url:"/sg003"`
-	*SG005Resource       `url:"/sg005"`
-	*SG006Resource       `url:"/sg006"`
-	*SG008Resource       `url:"/sg008"`
-	*SG009Resource       `url:"/sg009"`
-	*DCG001Resource      `url:"/dcg001"`
-	*DCG002Resource      `url:"/dcg002"`
-	*DCG003Resource      `url:"/dcg003"`
-	*DCG006Resource      `url:"/dcg006"`
-	*DCG008Resource      `url:"/dcg008"`
-	*DCG014Resource      `url:"/dcg014"`
 }
 
 func main() {
@@ -43,7 +31,8 @@ func main() {
 	})
 	fasthttp.Startup(&ctx).
 		Middlewares(
-			fasthttp.UseResourceManager(&ResourceManager{}),
+			// fasthttp.UseResourceManager(&ResourceManager{}),
+			fasthttp.UseRequestManager(&ResourceManager{}),
 			fasthttp.UseXHttpMethodHeader(),
 			fasthttp.UseErrorHandler(func(ctx *fasthttp.RequestCtx, err interface{}) {
 				fail, ok := err.(*failure.Failure)

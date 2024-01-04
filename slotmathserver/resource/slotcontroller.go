@@ -1,14 +1,16 @@
 package resource
 
 import (
+	"digitalopen/slotmathserver/resource/args"
 	"encoding/json"
 	"fmt"
-	"slotmathserver/resource/args"
 	"strings"
 
+	"digitalopen/games"
+
+	"digitalopen/games/scriptor"
+
 	"github.com/shopspring/decimal"
-	"gitlab.com/gaas_module/games"
-	"gitlab.com/gaas_module/games/scriptor"
 )
 
 // SlotController is a data structure that represents the game flow of a slot machine.
