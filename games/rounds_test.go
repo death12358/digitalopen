@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"games"
+	"github.com/death12358/digitalopn/games"
 
 	"github.com/shopspring/decimal"
 )

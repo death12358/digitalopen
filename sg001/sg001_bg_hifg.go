@@ -1,10 +1,10 @@
-package sg001
+cpackage sg001
 
 import (
 	"strconv"
 
-	"games"
-	"games/random"
+	"github.com/death12358/digitalopn/games"
+	"github.com/death12358/digitalopn/games/random"
 
 	"github.com/shopspring/decimal"
 )

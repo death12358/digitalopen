@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"games/random"
-	weights "games/weight"
+	"github.com/death12358/digitalopn/games/random"
+	weights "github.com/death12358/digitalopn/games/weight"
 )
 
 func Test_Weight(t *testing.T) {

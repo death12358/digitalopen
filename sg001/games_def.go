@@ -3,11 +3,11 @@ package sg001
 import (
 	"slot_digitalopen/games"
 
-	"games/slots"
+	"github.com/death12358/digitalopn/games/slots"
 
+	"github.com/death12358/digitalopn/sg001/jackpot"
+	"github.com/death12358/digitalopn/sg001/lightning"
 	"github.com/shopspring/decimal"
-	"gitlab.com/gaas_math/slotmachine/sg001/jackpot"
-	"gitlab.com/gaas_math/slotmachine/sg001/lightning"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"games/random"
+	"github.com/death12358/digitalopn/games/random"
 )
 
 var (

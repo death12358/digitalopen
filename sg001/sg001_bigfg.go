@@ -3,9 +3,9 @@ package sg001
 import (
 	"strconv"
 
-	"games"
-	"games/random"
-	"games/slots"
+	"github.com/death12358/digitalopn/games"
+	"github.com/death12358/digitalopn/games/random"
+	"github.com/death12358/digitalopn/games/slots"
 
 	"github.com/shopspring/decimal"
 )

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"Golang/slot_digitalopen/games"
+	"github.com/death12358/digitalopn/games"
 
 	"github.com/shopspring/decimal"
 )

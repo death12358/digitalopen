@@ -1,8 +1,8 @@
 package sg001
 
 import (
-	"games"
-	"games/slots"
+	"github.com/death12358/digitalopn/games"
+	"github.com/death12358/digitalopn/games/slots"
 )
 
 const (

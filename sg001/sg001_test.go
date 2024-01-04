@@ -10,8 +10,8 @@ import (
 
 	"games"
 
+	"github.com/death12358/digitalopn/sg001"
 	"github.com/shopspring/decimal"
-	"gitlab.com/gaas_math/slotmachine/sg001"
 )
 
 var (

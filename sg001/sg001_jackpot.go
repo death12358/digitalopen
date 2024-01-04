@@ -9,9 +9,10 @@ package sg001
 //  Grand:	500 倍，無彩池累積，權重： 5
 
 import (
-	"games"
-	"games/slots"
-	weights "games/weight"
+	"github.com/death12358/digitalopn/games"
+	"github.com/death12358/digitalopn/games/slots"
+
+	weights "github.com/death12358/digitalopn/games/weight"
 
 	"github.com/shopspring/decimal"
 )

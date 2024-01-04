@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"games"
-	"games/slots"
+	"github.com/death12358/digitalopn/games"
+	"github.com/death12358/digitalopn/games/slots"
 
 	"github.com/shopspring/decimal"
 )

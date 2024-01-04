@@ -3,7 +3,7 @@ package scriptor_test
 import (
 	"testing"
 
-	"games/scriptor"
+	"github.com/death12358/digitalopn/games/scriptor"
 )
 
 // TestJackpotPeekScript -

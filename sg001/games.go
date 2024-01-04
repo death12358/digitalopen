@@ -1,10 +1,10 @@
 package sg001
 
 import (
-	"games/slots"
+	"github.com/death12358/digitalopn/games/slots"
 
-	"gitlab.com/gaas_math/slotmachine/sg001/jackpot"
-	"gitlab.com/gaas_math/slotmachine/sg001/lightning"
+	"github.com/death12358/digitalopn/sg001/jackpot"
+	"github.com/death12358/digitalopn/sg001/lightning"
 )
 
 // SG001_DEF - sg001 game definition
