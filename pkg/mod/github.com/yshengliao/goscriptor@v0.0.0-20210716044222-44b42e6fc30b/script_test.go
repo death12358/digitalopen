@@ -1,1 +1,0 @@
-package goscriptor_test
