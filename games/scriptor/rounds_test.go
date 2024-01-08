@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"testing"
 
-	"digitalopen/games/scriptor"
+	"github.com/death12358/digitalopen/games/scriptor"
 
-	"digitalopen/games"
+	"github.com/death12358/digitalopen/games"
 )
 
 var (

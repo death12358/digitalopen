@@ -1,14 +1,15 @@
 package resource
 
 import (
-	"digitalopen/slotmathserver/resource/args"
 	"encoding/json"
 	"fmt"
 	"strings"
 
-	"digitalopen/games"
+	"github.com/death12358/digitalopen/slotmathserver/resource/args"
 
-	"digitalopen/games/scriptor"
+	"github.com/death12358/digitalopen/games"
+
+	"github.com/death12358/digitalopen/games/scriptor"
 
 	"github.com/shopspring/decimal"
 )

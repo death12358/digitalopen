@@ -3,7 +3,7 @@ package scriptor
 import (
 	"errors"
 
-	"digitalopen/games"
+	"github.com/death12358/digitalopen/games"
 )
 
 // RoundUpdate - 更新回合單

@@ -1,7 +1,7 @@
 package lightning
 
 import (
-	"digitalopen/games"
+	"github.com/death12358/digitalopen/games"
 
 	"github.com/death12358/digitalopen/games/weight"
 

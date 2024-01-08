@@ -1,9 +1,10 @@
 package internal
 
 import (
-	"digitalopen/games/scriptor"
-	"digitalopen/slotmathserver/resource"
 	"time"
+
+	"github.com/death12358/digitalopen/games/scriptor"
+	"github.com/death12358/digitalopen/slotmathserver/resource"
 
 	fasthttp "github.com/Bofry/host-fasthttp"
 )

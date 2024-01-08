@@ -1,13 +1,14 @@
 package games_test
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
-	"digitalopen/games/slots"
 	"encoding/json"
 	"strconv"
 	"testing"
 	"time"
+
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/slots"
 
 	"github.com/shopspring/decimal"
 )

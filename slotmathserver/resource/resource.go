@@ -1,8 +1,9 @@
 package resource
 
 import (
-	"digitalopen/games/scriptor"
 	"log"
+
+	"github.com/death12358/digitalopen/games/scriptor"
 
 	"github.com/shopspring/decimal"
 )

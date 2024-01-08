@@ -1,15 +1,15 @@
-package weights_test
+package weight_test
 
 import (
 	"fmt"
 	"testing"
 
-	"digitalopen/games/random"
-	weights "digitalopen/games/weight"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/weight"
 )
 
 func Test_Weight(t *testing.T) {
-	wg := weights.NewGames([]int{2, 8, 90}, []int{
+	wg := weight.NewGames([]int{2, 8, 90}, []int{
 		1,
 		2,
 		3,

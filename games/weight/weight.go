@@ -1,28 +1,28 @@
-package weights
+package weight
 
 import "fmt"
 
 // Games - WeightGames 結構
 type Games struct {
-	weights []int
+	weight  []int
 	objects []int
 	sum     int
 }
 
 // NewWeightGames - 建立 WeightGames
-//  @param weights	權重
+//  @param weight	權重
 //  @param objects	物件
 //  @return *WeightGames	WeightGames 物件
-func NewGames(weights []int, objects []int) *Games {
+func NewGames(weight []int, objects []int) *Games {
 	// 檢查權重與物件數量是否相同
-	if len(weights) != len(objects) {
-		fmt.Println("weights and objects length not equal")
+	if len(weight) != len(objects) {
+		fmt.Println("weight and objects length not equal")
 		return nil
 	}
 
 	// 檢查權重是否為正整數 & 計算總權重
 	sum := 0
-	for _, weight := range weights {
+	for _, weight := range weight {
 		if weight < 0 {
 			fmt.Println("weight must be positive integer")
 			return nil
@@ -31,7 +31,7 @@ func NewGames(weights []int, objects []int) *Games {
 	}
 
 	return &Games{
-		weights: weights,
+		weight:  weight,
 		objects: objects,
 		sum:     sum,
 	}
@@ -67,7 +67,7 @@ func (w *Games) Pick(random int) (int, int) {
 	}
 
 	// 取得物件
-	for i, weight := range w.weights {
+	for i, weight := range w.weight {
 		if random < weight {
 			return w.objects[i], i
 		}

@@ -1,11 +1,12 @@
 package resource
 
 import (
-	"digitalopen/games"
-	"digitalopen/sg001"
-	"digitalopen/slotmathserver/resource/args"
 	"encoding/json"
 	"errors"
+
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/sg001"
+	"github.com/death12358/digitalopen/slotmathserver/resource/args"
 
 	"github.com/Bofry/host-fasthttp/response"
 	"github.com/Bofry/httparg"

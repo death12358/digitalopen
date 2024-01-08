@@ -1,11 +1,12 @@
 package main
 
 import (
-	"digitalopen/slotmathserver/failure"
-	. "digitalopen/slotmathserver/internal"
-	. "digitalopen/slotmathserver/resource"
 	"encoding/json"
 	"log"
+
+	"github.com/death12358/digitalopen/slotmathserver/failure"
+	. "github.com/death12358/digitalopen/slotmathserver/internal"
+	. "github.com/death12358/digitalopen/slotmathserver/resource"
 
 	"github.com/Bofry/config"
 	fasthttp "github.com/Bofry/host-fasthttp"
