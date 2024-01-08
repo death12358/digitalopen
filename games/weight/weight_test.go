@@ -14,6 +14,7 @@ func Test_Weight(t *testing.T) {
 		2,
 		3,
 	})
+
 	stat := make([]float64, wg.Len())
 	round := 10000000
 	for i := 0; i < round; i++ {

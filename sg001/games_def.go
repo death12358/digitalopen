@@ -1,10 +1,11 @@
 package sg001
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/slots"
-	"digitalopen/sg001/jackpot"
-	"digitalopen/sg001/lightning"
+	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/sg001/jackpot"
+	"github.com/death12358/digitalopen/sg001/lightning"
+
+	"github.com/death12358/digitalopen/games"
 
 	"github.com/shopspring/decimal"
 )

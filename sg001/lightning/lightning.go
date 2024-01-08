@@ -1,11 +1,12 @@
 package lightning
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
-	"digitalopen/games/slots"
-	weights "digitalopen/games/weight"
 	"errors"
+
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/games/weight"
 
 	"github.com/shopspring/decimal"
 )
@@ -13,8 +14,8 @@ import (
 // Games is a game of Lightning
 // games.BonusFreeGame2
 type Games struct {
-	bg_reel_game *weights.Games
-	fg_reel_game *weights.Games
+	bg_reel_game *weight.Games
+	fg_reel_game *weight.Games
 	reelDef      int
 }
 
@@ -23,7 +24,7 @@ type Games struct {
 //	@param bg_reel	- bonus game reel weight
 //	@param fg		- 中了FG後權重配置
 //	@param def		- 盤面大小
-func NewLightningGames(bg_reel, fg *weights.Games, def uint) *Games {
+func NewLightningGames(bg_reel, fg *weight.Games, def uint) *Games {
 	return &Games{
 		bg_reel_game: bg_reel,
 		fg_reel_game: fg,

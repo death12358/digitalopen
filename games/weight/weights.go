@@ -1,5 +1,7 @@
 package weights
 
+import "fmt"
+
 // Games - WeightGames 結構
 type Games struct {
 	weights []int
@@ -14,14 +16,16 @@ type Games struct {
 func NewGames(weights []int, objects []int) *Games {
 	// 檢查權重與物件數量是否相同
 	if len(weights) != len(objects) {
-		panic("weights and objects length not equal")
+		fmt.Println("weights and objects length not equal")
+		return nil
 	}
 
 	// 檢查權重是否為正整數 & 計算總權重
 	sum := 0
 	for _, weight := range weights {
 		if weight < 0 {
-			panic("weight must be positive integer")
+			fmt.Println("weight must be positive integer")
+			return nil
 		}
 		sum += weight
 	}
@@ -59,7 +63,7 @@ func (w *Games) Sum() int {
 func (w *Games) Pick(random int) (int, int) {
 	// 檢查隨機數是否為正整數
 	if random < 0 {
-		panic("random must be positive integer")
+		fmt.Println("random must be positive integer")
 	}
 
 	// 取得物件
@@ -70,7 +74,8 @@ func (w *Games) Pick(random int) (int, int) {
 		random -= weight
 	}
 
-	panic("random out of range")
+	fmt.Println("random out of range")
+	return 0, 0
 }
 
 // Picks - 隨機取得多個物件

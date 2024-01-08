@@ -1,9 +1,10 @@
 package sg001
 
 import (
-	"digitalopen/games"
 	"errors"
 	"strconv"
+
+	"github.com/death12358/digitalopen/games"
 
 	"github.com/shopspring/decimal"
 )

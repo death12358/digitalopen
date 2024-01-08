@@ -1,13 +1,14 @@
 package sg001_test
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
-	weights "digitalopen/games/weight"
-	"digitalopen/sg001"
 	"encoding/json"
 	"fmt"
 	"testing"
+
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/weight"
+	"github.com/death12358/digitalopen/sg001"
 
 	"github.com/shopspring/decimal"
 )
@@ -385,7 +386,7 @@ func Test_Lightning(t *testing.T) {
 	//依照EXCEL計算結果 隨機決定Lightning起始的SF(權重可調整精確的小數位)
 	HowManySFWeightTable := []int{9848, 03453, 1011, 262, 61, 12, 25, 0, 0, 0}
 	HowManySFObjectsTable := []int{6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
-	HowManySF := weights.NewGames(HowManySFWeightTable, HowManySFObjectsTable)
+	HowManySF := weight.NewGames(HowManySFWeightTable, HowManySFObjectsTable)
 	dice := random.Intn(HowManySF.Sum())
 	pick, _ := HowManySF.Pick(dice)
 
@@ -483,14 +484,14 @@ func Test_onegai(t *testing.T) {
 			226093611,
 			8695908}
 		HowManySFObjectsTable := []int{6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
-		HowManySF := weights.NewGames(HowManySFWeightTable, HowManySFObjectsTable)
+		HowManySF := weight.NewGames(HowManySFWeightTable, HowManySFObjectsTable)
 		dice := random.Intn(HowManySF.Sum())
 		pick, _ := HowManySF.Pick(dice)
 
 		LightningFGWeightTable := []int{100, 200, 1200, 600, 200, 10}
 		LightningFGObjectTable := []int{8, 18, 38, 68, 88, 888}
 
-		LightningFG := weights.NewGames(
+		LightningFG := weight.NewGames(
 			LightningFGWeightTable,
 			LightningFGObjectTable,
 		)
@@ -513,7 +514,7 @@ func Test_onegai(t *testing.T) {
 		bg_LightningWeightTable := []int{90, 8, 2}
 		bg_LightningObjectTable := []int{0, 100, 1000}
 
-		LightningGame := weights.NewGames(
+		LightningGame := weight.NewGames(
 			bg_LightningWeightTable,
 			bg_LightningObjectTable,
 		)

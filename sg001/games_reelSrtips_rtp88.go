@@ -1,6 +1,6 @@
 package sg001
 
-import "digitalopen/games"
+import "github.com/death12358/digitalopen/games"
 
 var (
 	// RTP: 97.186%

@@ -9,9 +9,9 @@ package sg001
 //  Grand:	500 倍，無彩池累積，權重： 5
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/slots"
-	weights "digitalopen/games/weight"
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/games/weight"
 
 	"github.com/shopspring/decimal"
 )
@@ -84,8 +84,8 @@ var (
 		decimal.NewFromInt(500),
 	}
 
-	JPTrigger = weights.NewGames(jpTriggerWeightTable, jpTriggerObjectTable)
-	JPGame    = weights.NewGames(jpGameWeightTable, jpGameObjectTable)
+	JPTrigger = weight.NewGames(jpTriggerWeightTable, jpTriggerObjectTable)
+	JPGame    = weight.NewGames(jpGameWeightTable, jpGameObjectTable)
 
 	roll_rate = []decimal.Decimal{
 		decimal.Zero,

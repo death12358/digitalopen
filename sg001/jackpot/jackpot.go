@@ -1,18 +1,17 @@
 package jackpot
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
-	"digitalopen/games/slots"
-	weights "digitalopen/games/weight"
-
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/games/weight"
 	"github.com/shopspring/decimal"
 )
 
 // Games Game Structure
 type Games struct {
-	trigger   *weights.Games
-	jp_pools  *weights.Games
+	trigger   *weight.Games
+	jp_pools  *weight.Games
 	pays      *games.Pays
 	symbols   games.Symbol
 	roll_rate []decimal.Decimal
@@ -20,7 +19,7 @@ type Games struct {
 }
 
 // NewJackpotGame - 建立 Jackpot Game
-func NewJackpotGame(tr, jppool *weights.Games, pays *games.Pays, roll []decimal.Decimal, basepool []decimal.Decimal) *Games {
+func NewJackpotGame(tr, jppool *weight.Games, pays *games.Pays, roll []decimal.Decimal, basepool []decimal.Decimal) *Games {
 	return &Games{
 		trigger:   tr,
 		jp_pools:  jppool,

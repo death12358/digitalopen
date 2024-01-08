@@ -14,17 +14,18 @@ func NewReelStripList() ReelStripList {
 // ReelStrips- 轉輪表結構
 type ReelStrips []Reels
 
+// Reels 轉輪結構
+type Reels []Symbol
+
 // ContiguousReelStrips - 取得轉輪表
 //  @param count 獎圖數量
 //  @param position 轉輪位置
 func (r ReelStrips) ContiguousReelStrips(count, position []int) ReelStrips {
 	rCount := len(r)
 	reelStrips := make(ReelStrips, len(r))
-
 	for i := 0; i < rCount; i++ {
 		reelStrips[i] = r[i].ContiguousSymbols(count[i], position[i])
 	}
-
 	return reelStrips
 }
 
@@ -169,9 +170,6 @@ func (r ReelStrips) Strings() []string {
 	}
 	return strs
 }
-
-// Reels 轉輪結構
-type Reels []Symbol
 
 // Length - 返回轉輪長度
 //  @return int 轉輪長度

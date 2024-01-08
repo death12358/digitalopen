@@ -1,9 +1,9 @@
 package sg001
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
-	"digitalopen/games/slots"
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/games/slots"
 
 	"strconv"
 

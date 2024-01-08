@@ -1,9 +1,10 @@
 package games_test
 
 import (
-	"digitalopen/games"
 	"encoding/json"
 	"testing"
+
+	"github.com/death12358/digitalopen/games"
 
 	"github.com/shopspring/decimal"
 )

@@ -2,7 +2,8 @@ package lightning
 
 import (
 	"digitalopen/games"
-	weights "digitalopen/games/weight"
+
+	"github.com/death12358/digitalopen/games/weight"
 
 	"github.com/shopspring/decimal"
 )
@@ -68,14 +69,14 @@ var (
 	//8
 	bg_LightningWeightTable8 = []int{900, 90, 10}
 	bg_LightningObjectTable8 = []int{int(bg_default), int(bg_fg), int(bg_bg)}
-	LightningGame_8          = weights.NewGames(
+	LightningGame_8          = weight.NewGames(
 		bg_LightningWeightTable8,
 		bg_LightningObjectTable8,
 	)
 
 	bg_LightningFGWeightTable8 = []int{1, 7, 35, 15, 5, 1}
 	bg_LightningFGObjectTable8 = []int{int(bg_fg01), int(bg_fg05), int(bg_fg1), int(bg_fg2), int(bg_fg5), int(bg_fg10)}
-	LightningFreeGame_8        = weights.NewGames(
+	LightningFreeGame_8        = weight.NewGames(
 		bg_LightningFGWeightTable8,
 		bg_LightningFGObjectTable8,
 	)
@@ -83,14 +84,14 @@ var (
 	//18
 	bg_LightningWeightTable18 = []int{880, 100, 20}
 	bg_LightningObjectTable18 = []int{int(bg_default), int(bg_fg), int(bg_bg)}
-	LightningGame_18          = weights.NewGames(
+	LightningGame_18          = weight.NewGames(
 		bg_LightningWeightTable18,
 		bg_LightningObjectTable18,
 	)
 
 	bg_LightningFGWeightTable18 = []int{1, 24, 30, 10, 5, 1}
 	bg_LightningFGObjectTable18 = []int{int(bg_fg01), int(bg_fg05), int(bg_fg1), int(bg_fg2), int(bg_fg5), int(bg_fg10)}
-	LightningFreeGame_18        = weights.NewGames(
+	LightningFreeGame_18        = weight.NewGames(
 		bg_LightningFGWeightTable18,
 		bg_LightningFGObjectTable18,
 	)
@@ -98,42 +99,42 @@ var (
 	//38
 	bg_LightningWeightTable38 = []int{860, 110, 30}
 	bg_LightningObjectTable38 = []int{int(bg_default), int(bg_fg), int(bg_bg)}
-	LightningGame_38          = weights.NewGames(
+	LightningGame_38          = weight.NewGames(
 		bg_LightningWeightTable38,
 		bg_LightningObjectTable38,
 	)
 
 	bg_LightningFGWeightTable38 = []int{5, 24, 35, 10, 5, 1}
 	bg_LightningFGObjectTable38 = []int{int(bg_fg01), int(bg_fg05), int(bg_fg1), int(bg_fg2), int(bg_fg5), int(bg_fg10)}
-	LightningFreeGame_38        = weights.NewGames(
+	LightningFreeGame_38        = weight.NewGames(
 		bg_LightningFGWeightTable38,
 		bg_LightningFGObjectTable38,
 	)
 	//68
 	bg_LightningWeightTable68 = []int{830, 130, 40}
 	bg_LightningObjectTable68 = []int{int(bg_default), int(bg_fg), int(bg_bg)}
-	LightningGame_68          = weights.NewGames(
+	LightningGame_68          = weight.NewGames(
 		bg_LightningWeightTable68,
 		bg_LightningObjectTable68,
 	)
 
 	bg_LightningFGWeightTable68 = []int{5, 23, 35, 10, 5, 1}
 	bg_LightningFGObjectTable68 = []int{int(bg_fg01), int(bg_fg05), int(bg_fg1), int(bg_fg2), int(bg_fg5), int(bg_fg10)}
-	LightningFreeGame_68        = weights.NewGames(
+	LightningFreeGame_68        = weight.NewGames(
 		bg_LightningFGWeightTable68,
 		bg_LightningFGObjectTable68,
 	)
 	//88
 	bg_LightningWeightTable88 = []int{800, 150, 50}
 	bg_LightningObjectTable88 = []int{int(bg_default), int(bg_fg), int(bg_bg)}
-	LightningGame_88          = weights.NewGames(
+	LightningGame_88          = weight.NewGames(
 		bg_LightningWeightTable88,
 		bg_LightningObjectTable88,
 	)
 
 	bg_LightningFGWeightTable88 = []int{5, 33, 37, 10, 4, 2}
 	bg_LightningFGObjectTable88 = []int{int(bg_fg01), int(bg_fg05), int(bg_fg1), int(bg_fg2), int(bg_fg5), int(bg_fg10)}
-	LightningFreeGame_88        = weights.NewGames(
+	LightningFreeGame_88        = weight.NewGames(
 		bg_LightningFGWeightTable88,
 		bg_LightningFGObjectTable88,
 	)

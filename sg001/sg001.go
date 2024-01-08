@@ -1,12 +1,13 @@
 package sg001
 
 import (
-	"digitalopen/games"
-	"digitalopen/games/random"
 	"errors"
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
 
 	"github.com/shopspring/decimal"
 )

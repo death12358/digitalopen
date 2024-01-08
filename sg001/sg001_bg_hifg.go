@@ -3,8 +3,8 @@ package sg001
 import (
 	"strconv"
 
-	"digitalopen/games"
-	"digitalopen/games/random"
+	"github.com/death12358/digitalopen/games"
+	"github.com/death12358/digitalopen/games/random"
 
 	"github.com/shopspring/decimal"
 )
