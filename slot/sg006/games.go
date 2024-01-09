@@ -2,7 +2,7 @@ package sg006
 
 import (
 	"github.com/death12358/digitalopen/games/slots"
-	"github.com/death12358/digitalopen/sg006/vs"
+	"github.com/death12358/digitalopen/slot/sg006/vs"
 )
 
 // SG006_DEF - sg006 game definition

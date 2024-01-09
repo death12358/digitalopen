@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/death12358/digitalopen/dcg008"
 	"github.com/death12358/digitalopen/games"
 	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/slot/dcg008"
 	"github.com/shopspring/decimal"
 )
 

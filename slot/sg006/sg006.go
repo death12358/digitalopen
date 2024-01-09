@@ -8,7 +8,7 @@ import (
 
 	"github.com/death12358/digitalopen/games"
 	"github.com/death12358/digitalopen/games/random"
-	"github.com/death12358/digitalopen/sg006/vs"
+	"github.com/death12358/digitalopen/slot/sg006/vs"
 	"github.com/shopspring/decimal"
 )
 

@@ -9,9 +9,9 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/death12358/digitalopen/dcg014"
 	"github.com/death12358/digitalopen/games"
 	"github.com/death12358/digitalopen/games/random"
+	"github.com/death12358/digitalopen/slot/dcg014"
 )
 
 type ExtraStruct struct {

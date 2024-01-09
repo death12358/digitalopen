@@ -3,8 +3,8 @@ package sg001
 import (
 	"github.com/death12358/digitalopen/games/slots"
 
-	"github.com/death12358/digitalopen/sg001/jackpot"
-	"github.com/death12358/digitalopen/sg001/lightning"
+	"github.com/death12358/digitalopen/slot/sg001/jackpot"
+	"github.com/death12358/digitalopen/slot/sg001/lightning"
 )
 
 // SG001_DEF - sg001 game definition

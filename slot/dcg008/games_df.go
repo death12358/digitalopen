@@ -1,9 +1,9 @@
 package dcg008
 
 import (
-	"github.com/death12358/digitalopen/dcg008/adventure"
 	"github.com/death12358/digitalopen/games"
 	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/slot/dcg008/adventure"
 	"github.com/shopspring/decimal"
 )
 

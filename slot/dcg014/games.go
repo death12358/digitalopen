@@ -1,9 +1,9 @@
 package dcg014
 
 import (
-	"github.com/death12358/digitalopen/dcg014/easteregg"
-	"github.com/death12358/digitalopen/dcg014/grow"
 	"github.com/death12358/digitalopen/games/slots"
+	"github.com/death12358/digitalopen/slot/dcg014/easteregg"
+	"github.com/death12358/digitalopen/slot/dcg014/grow"
 )
 
 // dcg014_DEF - dcg014 game definition

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/death12358/digitalopen/games"
-	"github.com/death12358/digitalopen/sg001"
+	"github.com/death12358/digitalopen/slot/sg001"
 )
 
 func TestNew(t *testing.T) {
