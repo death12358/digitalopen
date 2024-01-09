@@ -26,7 +26,6 @@ func (f *Failure) MarshalJSON() ([]byte, error) {
 	if len(f.Description) > 0 {
 		reason = &f.Description
 	}
-
 	type Alias Failure
 	return json.Marshal(&struct {
 		Description *string `json:"description"`
