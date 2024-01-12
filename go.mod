@@ -19,6 +19,7 @@ require (
 	github.com/Bofry/structproto v0.2.2 // indirect
 	github.com/Bofry/trace v0.2.0-alpha.20230703152613 // indirect
 	github.com/Bofry/types v0.1.0 // indirect
+	github.com/adimax2953/log-tool v0.0.6 // indirect
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cstockton/go-conv v1.0.0 // indirect

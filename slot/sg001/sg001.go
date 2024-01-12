@@ -2,6 +2,7 @@ package sg001
 
 import (
 	"errors"
+	"fmt"
 	"strconv"
 	"sync"
 	"time"
@@ -20,7 +21,7 @@ type SG001 struct {
 
 func New() *SG001 {
 	decimal.DivisionPrecision = 18
-
+	fmt.Println("New")
 	return &SG001{
 		name: "SG001",
 		info: "SG001",
@@ -54,8 +55,11 @@ func (s *SG001) Spin(rtp string, bet decimal.Decimal, pickem []string, round gam
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println(ngReelsLen)
+
 	// 亂數位置
 	pos := random.Intsn(ngReelsLen)
+	fmt.Println(pos)
 	/*
 		TestWeightTable := []int{1, 1, 1}
 		TestObjectTable := []int{1, 2, 3}
@@ -86,6 +90,7 @@ func (s *SG001) Spin(rtp string, bet decimal.Decimal, pickem []string, round gam
 	//pos = []int{0, 0, 0, 0, 0}
 	//round, _ = s.SpinNormalGame(unitbet, rtp, pos, &round)
 	round, reels := s.SpinNormalGame(unitbet, rtp, pos, &round)
+	fmt.Println(reels)
 
 	if s.IsBigFGWin(unitbet, reels) {
 		round.Status = round.Status.Push(games.FreeGame)
@@ -103,7 +108,6 @@ func (s *SG001) Spin(rtp string, bet decimal.Decimal, pickem []string, round gam
 	}
 
 	round.Fisish = time.Now().Unix()
-
 	return &round, nil
 }
 

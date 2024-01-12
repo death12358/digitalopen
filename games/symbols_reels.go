@@ -17,6 +17,31 @@ type ReelStrips []Reels
 // Reels 轉輪結構
 type Reels []Symbol
 
+var StrToSymble map[string]Symbol = map[string]Symbol{
+	"W":  0,
+	"H1": 1,
+	"H2": 2,
+	"H3": 3,
+	"H4": 4,
+	"H5": 5,
+	"L1": 6,
+	"L2": 7,
+	"L3": 8,
+	"L4": 9,
+	"L5": 10,
+	"L6": 11,
+	"Sc": 13,
+	"Sb": 14,
+}
+
+func GetSymbolReelFromStringReel(s []string) (reel Reels) {
+	for _, r := range s {
+		symbol := StrToSymble[r]
+		reel = append(reel, symbol)
+	}
+	return
+}
+
 // ContiguousReelStrips - 取得轉輪表
 //  @param count 獎圖數量
 //  @param position 轉輪位置

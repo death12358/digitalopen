@@ -2,6 +2,7 @@ package sg001
 
 import (
 	"errors"
+	"fmt"
 
 	"github.com/death12358/digitalopen/games"
 	"github.com/death12358/digitalopen/games/random"
@@ -60,6 +61,7 @@ func (s *SG001) SpinNormalGame(unitbet, rtp string, position []int, round *games
 
 // GetNGReelsLen - 取得NG滾輪長度
 func (s *SG001) GetNGReelsLen(unitbet, rtp string) ([]int, error) {
+	fmt.Println(3)
 	// 取得 unitbet 遊戲
 	game_math, ok := sg001_gameplay[unitbet]
 	if !ok {

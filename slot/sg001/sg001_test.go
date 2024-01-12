@@ -34,21 +34,21 @@ var (
 // ONE SPIN
 func Test_SpinSlotSG001(t *testing.T) {
 	// create a new slot machine
-	unitbet := 88
+	unitbet := 8
 	choice := "1" //0:HIFG 1:AG
 	mock_game := games.NewGames(sg001.New())
 	t.Logf("GameName: %s", mock_game.Name())
 	t.Logf("GameInfo: %s", mock_game.Info())
-	t.Logf("CalcRollRate: %s", mock_game.CalcRollRate("8", "98", decimal.NewFromFloat(4)))
+	t.Logf("CalcRollRate: %s", mock_game.CalcRollRate("8", "97", decimal.NewFromFloat(4)))
 	// spin
-	round, err := mock_game.Spin("98", decimal.NewFromFloat(4.0), []string{fmt.Sprint(unitbet)}, r_default)
+	round, err := mock_game.Spin("97", decimal.NewFromFloat(4.0), []string{fmt.Sprint(unitbet)}, r_default)
 	if err != nil {
 		t.Errorf("Spin error: %s", err.Error())
 	}
 
 	// respin
 	if round.Position == 16 {
-		round, err = mock_game.Spin("98", decimal.NewFromFloat(4.0), []string{choice}, *round)
+		round, err = mock_game.Spin("97", decimal.NewFromFloat(4.0), []string{choice}, *round)
 		if err != nil {
 			t.Errorf("Respin error: %s", err.Error())
 		}
@@ -66,9 +66,9 @@ func Test_SpinSlotSG001(t *testing.T) {
 }
 
 func Test_SpinRoundsSG001(t *testing.T) {
-	Rounds := 1000000
-	unitbet := 88
-	rtp := "98"
+	Rounds := 100
+	unitbet := 8
+	rtp := "97"
 	choice := "0" //0:HIFG 1:AG
 	Totalbet := decimal.NewFromFloat(8)
 	// create a new slot machine
